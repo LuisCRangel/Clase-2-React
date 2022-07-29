@@ -13,14 +13,17 @@ function App() {
   const hobbies ={
     title: 'Hobbies',
     list:['Videojuegos', 'Programar', 'Viajar', 'Jugar Futbol']
+    
   }
   const myFood = {
     title: 'Mi Comida Favorita',
     list:['Carne Asada', 'Pizza', 'Sopas', 'Pastas']
+    
   }
   const stack = {
     title: 'My Stack Tech',
     list:['HTML', 'CSS', 'Javascript', 'React']
+    
   }
 
   return (
@@ -33,9 +36,9 @@ function App() {
         <li className='list__item'><b>Pelicula Favorita: </b> {person.favoriteMovie} </li>
         <li className='list__item'><b>Musica favorita: </b> {person.FavoriteMusic}</li>
       </ul>
-      <Card objInfo= {hobbies}/>
-      <Card objInfo= {myFood}/>
-      <Card objInfo= {stack}/>
+      <Card objInfo= {hobbies} color= '#b036ad' />
+      <Card objInfo= {myFood} color= '#0ba695' />
+      <Card objInfo= {stack} color= '#6b8e26'/>
 
       </div>
 

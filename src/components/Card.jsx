@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Card = ({objInfo}) => {
+const Card = ({objInfo, color}) => {
     return (
-        <ul className='list list2'>
+        <ul style={{backgroundColor: color}} className={`list`}>
             <h2>{objInfo.title}</h2>
             <li className='list__item'>{objInfo.list[0]}</li>
             <li className='list__item'>{objInfo.list[1]}</li>
